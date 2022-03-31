@@ -1,0 +1,46 @@
+.title {
+    margin-bottom: 40px;
+}
+
+.examples {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.example__container {
+    margin-bottom: 35px;
+}
+
+.examples__text--oneline {
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.examples__text--gradient {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+.examples__text--gradient::after {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.8) 60%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    bottom: 0;
+    content: '';
+    height: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.examples__text--fast {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    overflow: hidden;
+}
